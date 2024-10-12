@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/articleImage"
+        android:layout_width="359dp"
+        android:layout_height="342dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#E6E4E4"
+        android:fontFamily="@font/ibm_plex_sans"
+        android:paddingLeft="05dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Summer Pieces to Transition to Fall"
+        android:textAlignment="viewStart"
+        android:textColor="#146159"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/articleImage"
+        app:layout_constraintStart_toStartOf="@+id/articleImage"
+        app:layout_constraintTop_toBottomOf="@+id/articleImage" />
+
+    <TextView
+        android:id="@+id/articleDetails"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ibm_plex_sans"
+        android:paddingLeft="5dp"
+        android:text="Summer is coming to an end that means fall! But temperatures are still warm and summer will be sticking around for a few more weeks. This makes getting dressed a little difficult; do you still purchase summer clothing? Is it…"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/articleTitle"
+        app:layout_constraintStart_toStartOf="@+id/articleTitle"
+        app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+
+    <TextView
+        android:id="@+id/allDetails"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/ibm_plex_sans"
+        android:paddingLeft="5dp"
+        android:text="Summer is coming to an end that means fall! But temperatures are still warm and summer will be sticking around for a few more weeks. This makes getting dressed a little difficult; do you still purchase summer clothing? Is it…"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/articleTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/articleTitle"
+        app:layout_constraintTop_toBottomOf="@+id/articleDetails"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
